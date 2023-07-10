@@ -1,0 +1,15 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_single_quotes: true
+    avoid_empty_else: true
+    require_trailing_commas: true
+    lines_longer_than_80_chars: false
+
+analyzer:
+  errors:
+    lines_longer_than_80_chars: ignore
+    todo: warning
+    require_trailing_commas: warning
