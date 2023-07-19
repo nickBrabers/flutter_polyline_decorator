@@ -1,7 +1,7 @@
 name: flutter_polyline_decorator
 description: A new Flutter package project.
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/nickBrabers/flutter_polyline_decorator
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
