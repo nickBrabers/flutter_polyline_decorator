@@ -212,10 +212,6 @@ class PolylineDecoratorPainter extends CustomPainter {
     );
 
     final indicatorPaint = Paint()..color = polyline.color;
-    final borderColor = Paint()
-      ..color = Colors.black
-      ..strokeWidth = 1
-      ..style = PaintingStyle.stroke;
     for (int i = 0; i < points.length; i++) {
       ProjectedPoint point = points[i];
 
@@ -230,9 +226,6 @@ class PolylineDecoratorPainter extends CustomPainter {
       arrowHeadPath.close();
 
       canvas.drawPath(arrowHeadPath, indicatorPaint);
-      canvas.drawLine(arrowHeadPoints[0], arrowHeadPoints[1], borderColor);
-      canvas.drawLine(arrowHeadPoints[1], arrowHeadPoints[2], borderColor);
-      canvas.drawLine(arrowHeadPoints[2], arrowHeadPoints[0], borderColor);
     }
   }
 
